@@ -1,0 +1,15 @@
+# Created at 2025-05-25T17:34:25.866
+Picked up JAVA_TOOL_OPTIONS: --enable-native-access=ALL-UNNAMED
+
+# Created at 2025-05-25T17:34:27.890
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+
+# Created at 2025-05-25T17:34:27.891
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.netty.util.internal.PlatformDependent0$4 (file:/C:/Users/LENOVO/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar)
+
+# Created at 2025-05-25T17:34:27.891
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$4
+
+# Created at 2025-05-25T17:34:27.892
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+
