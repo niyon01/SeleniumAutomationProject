@@ -34,15 +34,15 @@ public class FunctionalTest {
 
     @Test
     public void testAddToCart() throws InterruptedException {
-        // Log in with valid credentials
+     
         loginPage.open();
         InventoryPage inventoryPage = loginPage.login("standard_user", "secret_sauce");
-        // Perform a functional action: add the first product ("Sauce Labs Backpack") to the cart
+       
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-        // Verify that the cart badge shows 1 item added
+      
         String cartCount = driver.findElement(By.className("shopping_cart_badge")).getText();
         Assertions.assertEquals("1", cartCount, "Cart badge should show 1 after adding one item.");
-        // Pause for 60 seconds (demo purposes)
+       
         Thread.sleep(20000);
     }
 }

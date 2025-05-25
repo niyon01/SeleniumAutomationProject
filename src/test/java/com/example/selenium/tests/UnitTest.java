@@ -13,24 +13,24 @@ public class UnitTest {
 
     @BeforeAll
     public static void setupDriverManager() {
-        // Set up ChromeDriver (for Chrome v136) using WebDriverManager
+        
         WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
     public void setUp() {
-        // Initialize Chrome browser
+       
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        // Implicit wait for element lookup (10 seconds)
+     
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
-        // Instantiate the page object
+     
         loginPage = new LoginPage(driver);
     }
 
     @AfterEach
     public void tearDown() {
-        // Close browser after each test
+     
         if (driver != null) {
             driver.quit();
         }

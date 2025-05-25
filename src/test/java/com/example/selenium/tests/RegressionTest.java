@@ -33,14 +33,14 @@ public class RegressionTest {
 
     @Test
     public void testInventoryItemCount() throws InterruptedException {
-        // Open login and log in successfully
+      
         loginPage.open();
         InventoryPage inventoryPage = loginPage.login("standard_user", "secret_sauce");
-        // Verify that exactly 6 products are displayed on the inventory page
+       
         int productCount = inventoryPage.getProducts().size();
         Assertions.assertEquals(6, productCount, 
                 "There should be 6 products displayed on the inventory page.");
-        // Pause for 60 seconds (demo purposes)
+      
         Thread.sleep(20000);
     }
 }

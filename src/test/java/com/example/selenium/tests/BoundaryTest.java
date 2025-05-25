@@ -32,14 +32,14 @@ public class BoundaryTest {
 
     @Test
     public void testInvalidLogin() throws InterruptedException {
-        // Open the login page and attempt login with incorrect password
+      
         loginPage.open();
         loginPage.login("standard_user", "wrong_password");
-        // Verify that an error message is displayed (login should fail)
+       
         String errorMsg = loginPage.getErrorMessage();
         Assertions.assertTrue(errorMsg.contains("Username and password do not match"),
                 "Error message should indicate invalid login credentials.");
-        // Pause for 60 seconds (demo purposes)
+     
         Thread.sleep(20000);
     }
 }
